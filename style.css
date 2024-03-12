@@ -18,6 +18,7 @@
 
 
 .pop{
+    position: sticky;
     display: none;
     width: 19%;
     height: 20vh;
@@ -40,7 +41,7 @@
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 p{
     /* background-color: red; */
@@ -55,7 +56,7 @@ p{
 
 }
 #iG{
- 
+ display: block;
 
 
 
@@ -64,15 +65,7 @@ p{
     /* padding-left: 1rem; */
 font-size: 1.2rem;
 }
-#line{
-    background:#4FBD11;
-    width:100%;
-    height: 4px;
-    /* background: red; */
-    position: absolute;
-top: 93%;
-left: 0;
-}
+
 
 .todo-app {
     width: 100%;
@@ -187,23 +180,43 @@ ul li span:hover{
 
 }
 
+/* #line{ */
+    /* background:#4FBD11;
+    /* width:100%; */
+    /* height: 4px;
+    position: absolute;
+    top: 93%;
+    left: 0; */
+/* } */ */
 
 #line::before{
-    content: "";
-    animation: line 2s linear infinite;
+    position: absolute;
+    background-color: red;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 0 ;
+   content: "";
+    animation: line  3s linear infinite;
+    border-radius: 20px;
+
+    /* content: ""; */
+    /* animation: line 2s linear infinite;
+    margin-bottom: 0; */
 }
 @keyframes line {
-
     0% {
-         width: 100%;
-    }
-    100% {
+        width: 100%;
+        /* left: 100%; */
+      }
+      50% {
+        /* left: 50%; */
+      }
+      100% {
         left: -100%;
-        /* transform: translateX(-100%); */
-
-    }
-
-    
+      }
+   
 }
 
 

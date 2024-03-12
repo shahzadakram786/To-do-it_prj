@@ -9,9 +9,9 @@ let line = document.getElementById("line");
 function addTask() {
 
 
-    setTimeout(function() {
-        popup.style.display = "none";
-    },2000)
+    // setTimeout(function() {
+    //     popup.style.display = "none";
+    // },2000)
 
 
   if (inputbox.value === "") {
@@ -22,9 +22,26 @@ function addTask() {
     p.innerText = "Please provide a value";
     popup.style.display = "block";
 
-    alert("Please enter a task");
+    // alert("Please enter a task");
 
   } else {
+
+
+    console.log("provided a value", inputbox.value);
+    popup.style.display = "block";
+    p.innerText = "Item Added To The List";
+    line.style.background = "#4FBD11";
+
+    iR.style.display = "none";
+    iG.style.display = "block";
+
+
+
+
+
+
+
+
     console.log("if adding some text in the iput");
 
     let li = document.createElement("li");
