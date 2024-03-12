@@ -3,7 +3,7 @@ const listCont = document.getElementById("list-Container");
 
 function addTask() {
   if (inputbox.value === "") {
-    console.log(" if its empty");
+    console.log("if its empty");
 
     alert("Please enter a task");
 
