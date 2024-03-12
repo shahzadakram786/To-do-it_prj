@@ -5,12 +5,59 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 
 }
+
+
+.pop{
+    width: 19%;
+    max-width:400px;
+    background-color: white;
+    /* padding: 1rem 2rem; */
+    padding: 10px;
+    border-radius: 10px;
+     display: flex;
+
+
+}
+
+.pop2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+}
+p{
+    background-color: red;
+    ali;
+    text-align: center;
+}
+ 
+#iR{
+    display: none;
+
+
+}
+#iG{
+ 
+
+
+
+}
+.fa-solid{
+    /* padding-left: 1rem; */
+
+}
+
 
 .todo-app {
     width: 100%;
